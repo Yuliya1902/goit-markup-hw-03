@@ -71,10 +71,11 @@ body{
 .header-container {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #ECECEC;
-
-}            
-.header .site-nav a{
+} 
+.header {
+     border-bottom: 1px solid #ECECEC;
+}           
+.header .site-nav a {
     color: var(--primary-text-color); 
 } 
 .header a {
@@ -146,7 +147,6 @@ body{
  .hero {
     background-color: #2F303A;
     color: var(--fon-color-white);
-    height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
  }   
@@ -202,13 +202,14 @@ body{
     line-height: 1.16;
     text-align: center;
     color: var(--primary-text-color);
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 .benefit-list { 
     display: flex;
     gap: 30px;
+
 }  
-.benefit-list .li{
+.benefit-list li{
     width: calc((100% - 90px) / 4); 
 }
 
@@ -285,8 +286,8 @@ body{
  border-radius: 0px;
  }
  .team-card {
-    margin-top: 50px;
-    margin-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 30px;
  }
 
 
@@ -294,10 +295,6 @@ body{
                         /* Стили для portfolio.html */
  
                         
-.portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}                       
 .button {
      font-family: "roboto", sans-serif;
      color: var(--primary-text-color);
@@ -345,9 +342,6 @@ color: var(--fon-color-white);
 }
 .card-item 
 {
-    width: 370px;
-    height: 404px;
-    margin-top: 50px;
     flex-basis: calc((100% - 60px) / 3);
 }
 .portfolio-title {
@@ -362,7 +356,7 @@ color: var(--fon-color-white);
  .portfolio-text {
     line-height: 2;
     color: var(--secondo-text-color);
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
     }
 .card-content {
     padding: 20px 24px;
@@ -412,7 +406,7 @@ color: var(--fon-color-white);
  }
  
 .footer-item:not(:last-child) {
-        margin-bottom: 9px;
+    margin-bottom: 9px;
  }
  .footer-list a {
     color: rgba(255, 255, 255, 0.6);
@@ -423,9 +417,6 @@ color: var(--fon-color-white);
     font-size: 14px;
     line-height: 1.71;
     display: inline-block;
-    /* margin-bottom: 9px; */
-   
-   
 }
 .footer-contacts-link:hover,
 .footer-contacts-link:focus
